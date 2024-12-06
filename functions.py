@@ -1,14 +1,13 @@
 
 
+
 def several_zeros():
     print("0" * 10)
 
-several_zeros()
 
 def several_zeros_custom(nb_zeros):
     print("0" * nb_zeros)
 
-several_zeros_custom(10)
 
 
 
@@ -24,5 +23,12 @@ def matrix(rows, cols):
     for i in range(rows):
         listea.append(liste)
     print(listea)
-matrix(3,2)
-matrix(10,5)
+
+
+
+if __name__ == '__main__':
+    several_zeros()
+    several_zeros_custom(10)
+
+    matrix(3,2)
+    matrix(10,5)
