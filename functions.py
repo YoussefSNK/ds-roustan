@@ -35,6 +35,13 @@ class Matrix:
     def __eq__(self, deux):
         return self.matrice == deux.matrice
 
+# ça marche!!!
+def my_sort(my_list: [int]) -> [int]:
+    for i in range(len(my_list)):
+        for j in range(len(my_list)-1):
+            if my_list[j] > my_list[j + 1]:
+                my_list[j], my_list[j + 1] = my_list[j + 1], my_list[j]
+    return my_list
 
 
 
