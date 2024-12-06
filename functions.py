@@ -1,9 +1,9 @@
 def several_zeros():
-    print("0" * 10)
+    return [0] * 10
 
 
 def several_zeros_custom(nb_zeros):
-    print("0" * nb_zeros)
+    return [0] * nb_zeros
 
 
 # ça marche je crois
