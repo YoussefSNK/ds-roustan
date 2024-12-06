@@ -39,8 +39,8 @@ class Matrix:
 
 
 if __name__ == '__main__':
-    several_zeros()
-    several_zeros_custom(10)
+    print(several_zeros())
+    # several_zeros_custom(10)
 
     matrix(3,2)
     matrix(10,5)
