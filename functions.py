@@ -1,6 +1,3 @@
-
-
-
 def several_zeros():
     print("0" * 10)
 
@@ -11,7 +8,7 @@ def several_zeros_custom(nb_zeros):
 
 
 
-# à check plus tard
+# ça marche je crois
 def matrix(rows, cols):
     liste = []
     listea = []
@@ -24,6 +21,27 @@ def matrix(rows, cols):
         listea.append(liste)
     print(listea)
 
+# demander plus tard pour le bail de la liste
+class Matrix:
+    def __init__(self, rows, cols):
+        self.rows = rows
+        self.cols = cols
+        self.ligne = []
+        self.matrice = []
+        for i in range(cols):
+            self.ligne.append(0)
+        for i in range(rows):
+            self.matrice.append(self.ligne)
+        print(self.matrice)
+
+
+    def get_value(self, row, col):
+        return self.matrice[col][row]
+
+    def __eq__(self, deux):
+        return self.matrice == deux.matrice
+
+
 
 
 if __name__ == '__main__':
@@ -32,3 +50,7 @@ if __name__ == '__main__':
 
     matrix(3,2)
     matrix(10,5)
+
+    a = Matrix(3,2)
+    b = Matrix(3,3)
+    print(a==b)
