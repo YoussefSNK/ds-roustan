@@ -6,20 +6,14 @@ def several_zeros_custom(nb_zeros):
     print("0" * nb_zeros)
 
 
-
-
 # ça marche je crois
 def matrix(rows, cols):
     liste = []
     listea = []
     for i in range(cols):
         liste.append(0)
-    
-    print(liste)
-
     for i in range(rows):
         listea.append(liste)
-    print(listea)
 
 # demander plus tard pour le bail de la liste
 class Matrix:
